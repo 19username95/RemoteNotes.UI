@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RemoteNotes.UI.Views.NoteView"
+             xmlns:controls="clr-namespace:RemoteNotes.UI.Controls"
+             NavigationPage.HasNavigationBar="false"
+             xmlns:prism="http://prismlibrary.com">
+    
+    <ContentPage.Content>
+
+        <ScrollView>
+
+            <StackLayout Padding="15"
+                         Spacing="10">
+
+                <Image Source="{Binding Photo}"/>
+
+                <Label Text="{Binding Topic}"
+                       FontSize="Large"
+                       FontAttributes="Bold"/>
+
+                <Label Text="{Binding Text}"/>
+
+                <Label Text="{Binding PublishTime, StringFormat='Publish time: {0:d} at {0:hh}:{0:mm}'}"
+                       VerticalOptions="EndAndExpand"
+                       FontSize="Micro"/>
+
+                <Label Text="{Binding ModifyTime, StringFormat='Modify time: {0:d} at {0:hh}:{0:mm}'}"
+                       FontSize="Micro"/>
+                
+                <controls:CustomButton ButtonLabel="E d i t"
+                                       TappedCommand="{Binding EditCommand}" />
+                <controls:CustomButton ButtonLabel="D e l e t e"
+                                       TappedCommand="{Binding DeleteCommand}"/>
+                <controls:CustomButton ButtonLabel="B a c k"
+                                       TappedCommand="{prism:GoBack}"/>
+
+            </StackLayout>
+
+        </ScrollView>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

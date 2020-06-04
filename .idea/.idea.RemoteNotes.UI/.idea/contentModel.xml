@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.arch.lifecycle.runtime/1.1.1.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.arch.lifecycle.viewmodel/1.1.1.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.animated.vector.drawable/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.compat/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.coordinaterlayout/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.design/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.media.compat/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.transition/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.v7.appcompat/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.v7.recyclerview/28.0.0.3/proguard/monoandroid90/proguard.txt" t="Include" />
+    <e p="$USER_HOME$/.nuget/packages/xamarin.android.support.versionedparcelable/28.0.0.3/proguard/monoandroid90" t="Include">
+      <e p="proguard.txt" t="Include" />
+    </e>
+    <e p="$USER_HOME$/.nuget/packages/xamarin.forms/3.6.0.709228/build/MonoAndroid10" t="Include">
+      <e p="proguard.cfg" t="Include" />
+    </e>
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="RemoteNotes.UI/RemoteNotes.UI" t="IncludeRecursive">
+        <e p="App.xaml" t="Include" />
+        <e p="App.xaml.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Constants.cs" t="Include" />
+        <e p="Controls" t="Include" />
+        <e p="Enums" t="Include">
+          <e p="EOperationStatus.cs" t="Include" />
+        </e>
+        <e p="Hubs" t="Include">
+          <e p="Authentication" t="Include">
+            <e p="AuthenticationHub.cs" t="Include" />
+            <e p="IAuthenticationHub.cs" t="Include" />
+          </e>
+          <e p="BaseHub.cs" t="Include" />
+          <e p="IBaseHub.cs" t="Include" />
+          <e p="Notes" t="Include">
+            <e p="INotesHub.cs" t="Include" />
+            <e p="NotesHub.cs" t="Include" />
+          </e>
+          <e p="user" t="Include">
+            <e p="IUserHub.cs" t="Include" />
+            <e p="UserHub.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Models" t="Include">
+          <e p="Member.cs" t="Include" />
+          <e p="Note.cs" t="Include" />
+          <e p="Result.cs" t="Include" />
+          <e p="SaveMemberInfoRequest.cs" t="Include" />
+          <e p="SavePersonalInfoRequest.cs" t="Include" />
+          <e p="ServerResult.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netstandard2.0" t="Include">
+              <e p="App.xaml.g.cs" t="Include" />
+              <e p="RemoteNotes.UI.AssemblyInfo.cs" t="Include" />
+              <e p="Views" t="Include">
+                <e p="CreateNoteView.xaml.g.cs" t="Include" />
+                <e p="EditNoteView.xaml.g.cs" t="Include" />
+                <e p="EditUserView.xaml.g.cs" t="Include" />
+                <e p="LoginPage.xaml.g.cs" t="Include" />
+                <e p="NotesCollectionPage.xaml.g.cs" t="Include" />
+                <e p="NoteView.xaml.g.cs" t="Include" />
+                <e p="RemoteNotesTabbedPage.xaml.g.cs" t="Include" />
+                <e p="UserInfoPage.xaml.g.cs" t="Include" />
+              </e>
+            </e>
+          </e>
+        </e>
+        <e p="RemoteNotes.UI.csproj" t="IncludeRecursive" />
+        <e p="Service" t="Include">
+          <e p="Authentication" t="Include">
+            <e p="AuthenticationService.cs" t="Include" />
+            <e p="IAuthenticationService.cs" t="Include" />
+          </e>
+          <e p="Note" t="Include">
+            <e p="INoteService.cs" t="Include" />
+            <e p="NoteService.cs" t="Include" />
+          </e>
+          <e p="Storage" t="Include">
+            <e p="IStorageService.cs" t="Include" />
+            <e p="StorageService.cs" t="Include" />
+          </e>
+          <e p="user" t="Include">
+            <e p="IUserService.cs" t="Include" />
+            <e p="UserService.cs" t="Include" />
+          </e>
+        </e>
+        <e p="ViewModels" t="Include">
+          <e p="Base" t="Include">
+            <e p="ViewModelBase.cs" t="Include" />
+          </e>
+          <e p="CreateNoteViewModel.cs" t="Include" />
+          <e p="EditNoteViewModel.cs" t="Include" />
+          <e p="EditUserViewModel.cs" t="Include" />
+          <e p="LoginPageViewModel.cs" t="Include" />
+          <e p="NotesCollectionPageViewModel.cs" t="Include" />
+          <e p="NoteViewModel.cs" t="Include" />
+          <e p="RemoteNotesTabbedPageViewModel.cs" t="Include" />
+          <e p="UserInfoPageViewModel.cs" t="Include" />
+          <e p="ViewModelBase.cs" t="Include" />
+        </e>
+        <e p="Views" t="Include">
+          <e p="CreateNoteView.xaml" t="Include" />
+          <e p="CreateNoteView.xaml.cs" t="Include" />
+          <e p="EditNoteView.xaml" t="Include" />
+          <e p="EditNoteView.xaml.cs" t="Include" />
+          <e p="EditUserView.xaml" t="Include" />
+          <e p="EditUserView.xaml.cs" t="Include" />
+          <e p="LoginPage.xaml" t="Include" />
+          <e p="LoginPage.xaml.cs" t="Include" />
+          <e p="NotesCollectionPage.xaml" t="Include" />
+          <e p="NotesCollectionPage.xaml.cs" t="Include" />
+          <e p="NoteView.xaml" t="Include" />
+          <e p="NoteView.xaml.cs" t="Include" />
+          <e p="RemoteNotesTabbedPage.xaml" t="Include" />
+          <e p="RemoteNotesTabbedPage.xaml.cs" t="Include" />
+          <e p="UserInfoPage.xaml" t="Include" />
+          <e p="UserInfoPage.xaml.cs" t="Include" />
+        </e>
+      </e>
+      <e p="RemoteNotes.UI/RemoteNotes.UI.Android" t="IncludeRecursive">
+        <e p="Assets" t="Include">
+          <e p="AboutAssets.txt" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="MainActivity.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AndroidManifest.xml" t="Include" />
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="RemoteNotes.UI.Android.csproj" t="IncludeRecursive" />
+        <e p="Resources" t="Include">
+          <e p="AboutResources.txt" t="Include" />
+          <e p="drawable" t="Include">
+            <e p="user_default.png" t="Include" />
+          </e>
+          <e p="layout" t="Include">
+            <e p="Tabbar.axml" t="Include" />
+            <e p="Toolbar.axml" t="Include" />
+          </e>
+          <e p="mipmap-hdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="mipmap-mdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="mipmap-xhdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="mipmap-xxhdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="mipmap-xxxhdpi" t="Include">
+            <e p="ic_launcher.png" t="Include" />
+          </e>
+          <e p="Resource.Designer.cs" t="Include" />
+          <e p="values" t="Include">
+            <e p="styles.xml" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="RemoteNotes.UI/RemoteNotes.UI.iOS" t="IncludeRecursive">
+        <e p="AppDelegate.cs" t="Include" />
+        <e p="Assets.xcassets" t="Include">
+          <e p="AppIcon.appiconset" t="Include">
+            <e p="Contents.json" t="Include" />
+            <e p="Icon-App-20x20@1x.png" t="Include" />
+            <e p="Icon-App-20x20@2x.png" t="Include" />
+            <e p="Icon-App-20x20@3x.png" t="Include" />
+            <e p="Icon-App-29x29@1x.png" t="Include" />
+            <e p="Icon-App-29x29@2x.png" t="Include" />
+            <e p="Icon-App-29x29@3x.png" t="Include" />
+            <e p="Icon-App-40x40@1x.png" t="Include" />
+            <e p="Icon-App-40x40@2x.png" t="Include" />
+            <e p="Icon-App-40x40@3x.png" t="Include" />
+            <e p="Icon-App-57x57@1x.png" t="Include" />
+            <e p="Icon-App-57x57@2x.png" t="Include" />
+            <e p="Icon-App-60x60@1x.png" t="Include" />
+            <e p="Icon-App-60x60@2x.png" t="Include" />
+            <e p="Icon-App-60x60@3x.png" t="Include" />
+            <e p="Icon-App-72x72@1x.png" t="Include" />
+            <e p="Icon-App-72x72@2x.png" t="Include" />
+            <e p="Icon-App-76x76@1x.png" t="Include" />
+            <e p="Icon-App-76x76@2x.png" t="Include" />
+            <e p="Icon-App-76x76@3x.png" t="Include" />
+            <e p="Icon-App-83.5x83.5@2x.png" t="Include" />
+            <e p="Icon-Small-50x50@1x.png" t="Include" />
+            <e p="Icon-Small-50x50@2x.png" t="Include" />
+            <e p="ItunesArtwork@2x.png" t="Include" />
+          </e>
+          <e p="Contents.json" t="Include" />
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Entitlements.plist" t="Include" />
+        <e p="Info.plist" t="Include" />
+        <e p="iTunesArtwork@1x.png" t="Include" />
+        <e p="ItunesArtwork@2x.png" t="Include" />
+        <e p="iTunesArtwork@3x.png" t="Include" />
+        <e p="Main.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="RemoteNotes.UI.iOS.csproj" t="IncludeRecursive" />
+        <e p="Resources" t="Include">
+          <e p="Default-568h@2x.png" t="Include" />
+          <e p="Default-Portrait.png" t="Include" />
+          <e p="Default-Portrait@2x.png" t="Include" />
+          <e p="Default.png" t="Include" />
+          <e p="Default@2x.png" t="Include" />
+          <e p="LaunchScreen.storyboard" t="Include" />
+        </e>
+      </e>
+      <e p="RemoteNotes.UI.sln" t="IncludeFlat" />
+    </e>
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_RemoteNotes.UI.-690013167.00" t="ExcludeRecursive" />
+    <e p="$USER_HOME$/Library/Developer/Xamarin/android-sdk-macosx/platforms/android-28/data/res" t="IncludeRecursive" />
+  </component>
+</project>

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RemoteNotes.UI.Views.EditUserView"
+             x:Name="this"
+             xmlns:controls="clr-namespace:RemoteNotes.UI.Controls">
+    <ContentPage.Content>
+
+        <StackLayout>
+
+                <Grid HeightRequest="250"
+                      Margin="0, 0, 0, 75">
+
+                    <Image Source="../pattern.jpg"
+                           Aspect="AspectFill" />
+
+                    <StackLayout VerticalOptions="End" Margin="0,0,0,-75">
+                        <Grid>
+
+                            <Frame CornerRadius="100" 
+                                   HeightRequest="150"
+                                   WidthRequest="150"
+                                   HorizontalOptions="CenterAndExpand"
+                                   Padding="0"
+                                   HasShadow="True"
+                                   IsClippedToBounds="True">
+
+                                <Image Source="user_default.png" 
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center" />
+                            </Frame>
+
+                            <Frame CornerRadius="150" 
+                                   HeightRequest="150"
+                                   WidthRequest="150"
+                                   HorizontalOptions="Center"
+                                   Padding="0"
+                                   HasShadow="True"
+                                   IsClippedToBounds="True">
+
+                                <Image Source="{Binding Photo}"
+                                       HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Aspect="AspectFill"
+                                       HeightRequest="152"
+                                       WidthRequest="152"/>
+                            </Frame>
+
+                            <ContentView>
+                                <ContentView.GestureRecognizers>
+                                    <TapGestureRecognizer Command="{Binding PickImageCommand}"/>
+                                </ContentView.GestureRecognizers>
+                            </ContentView>
+                        </Grid>
+                    </StackLayout>
+                </Grid>
+
+                <ScrollView Margin="20">
+                    <Grid Padding="5" Margin="0, 20, 0, 0" RowSpacing="20" ColumnSpacing="15">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width=".4*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="45"/>
+                            <RowDefinition Height="0.2*"/>
+                            <RowDefinition Height="0.1*"/>
+                            <RowDefinition Height="0.1*"/>
+                        </Grid.RowDefinitions>
+
+                        <Label Grid.Row="0" Grid.Column="0" 
+                           HorizontalTextAlignment="End" 
+                           VerticalTextAlignment="Center"
+                           Text="First name" 
+                           FontSize="15" 
+                           TextColor="DarkGray"/>
+                        <Entry Grid.Row="0" Grid.Column="1" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"
+                           Text="{Binding FirstName}" 
+                           FontSize="15" 
+                           TextColor="Black"/>
+
+                        <Label Grid.Row="1" Grid.Column="0" 
+                           HorizontalTextAlignment="End" 
+                           VerticalTextAlignment="Center"
+                           Text="Last name" 
+                           FontSize="15" 
+                           TextColor="DarkGray"/>
+                        <Entry Grid.Row="1" Grid.Column="1" 
+                           HorizontalTextAlignment="Start"
+                           VerticalOptions="Center"
+                           Text="{Binding LastName}" 
+                           FontSize="15" 
+                           TextColor="Black"/>
+
+                        <Label Grid.Row="2" Grid.Column="0" 
+                           HorizontalTextAlignment="End" 
+                           VerticalTextAlignment="Center"
+                           Text="Date of birth" 
+                           FontSize="15" 
+                           TextColor="DarkGray"/>
+                        <DatePicker Grid.Row="2" Grid.Column="1" 
+                                HorizontalOptions="FillAndExpand"
+                                VerticalOptions="Center"
+                                Date="{Binding DateOfBirth}" 
+                                FontSize="15" 
+                                TextColor="Black"/>
+
+                        <Label Grid.Row="3" Grid.Column="0" 
+                           HorizontalTextAlignment="End" 
+                           VerticalTextAlignment="Center"
+                           Text="Email" 
+                           FontSize="15" 
+                           TextColor="DarkGray"/>
+                        <Entry Grid.Row="3" Grid.Column="1" 
+                           HorizontalTextAlignment="Start" 
+                           VerticalOptions="Center"
+                           Text="{Binding Email}" 
+                           FontSize="15" 
+                           TextColor="Black"/>
+
+                        <Label Grid.Row="4" Grid.Column="0" 
+                           HorizontalTextAlignment="End" 
+                           VerticalTextAlignment="Start"
+                           Text="About" 
+                           FontSize="15" 
+                           TextColor="DarkGray"/>
+                        <StackLayout Grid.Row="4" Grid.Column="1" 
+                                 HeightRequest="120" 
+                                 HorizontalOptions="CenterAndExpand"
+                                 VerticalOptions="Start"
+                                 BackgroundColor="Black">
+                            <Editor HeightRequest="118" 
+                                HorizontalOptions="Center"
+                                VerticalOptions="Center"
+                                Margin="1"
+                                BackgroundColor="White"
+                                Text="{Binding Interests}" 
+                                FontSize="15" 
+                                TextColor="Black"/>
+                        </StackLayout>
+
+
+                        <controls:CustomButton Grid.Row="5" Grid.Column="0" 
+                                               Grid.ColumnSpan="2" 
+                                               HeightRequest="5"
+                                               TappedCommand="{Binding BindingContext.SaveCommand, Source={x:Reference this}}"
+                                               ButtonLabel="S a v e"
+                                               Margin="15, 0"/>
+                        <controls:CustomButton Grid.Row="6" Grid.Column="0" 
+                                               Grid.ColumnSpan="2" 
+                                               HeightRequest="5"
+                                               TappedCommand="{Binding BindingContext.CancelCommand, Source={x:Reference this}}"
+                                               ButtonLabel="C a n c e l"
+                                               Margin="15, 0"/>
+                    </Grid>
+                </ScrollView>
+
+            </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>

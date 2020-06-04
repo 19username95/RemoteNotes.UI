@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RemoteNotes.UI.Views.EditNoteView"
+             xmlns:controls="clr-namespace:RemoteNotes.UI.Controls"
+             xmlns:prism="http://prismlibrary.com">
+    <ContentPage.Content>
+        <ScrollView>
+        <Grid Padding="15">
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="180"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+
+            <Image Source="https://1lady.pro/wp-content/uploads/2014/01/default-placeholder-1024x1024.png"/>
+
+            <Image Source="{Binding Photo}"/>
+
+            <ContentView>
+                <ContentView.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding PickImageCommand}"/>
+                </ContentView.GestureRecognizers>
+            </ContentView>
+
+            <Entry Grid.Row="1"
+                   Text="{Binding Topic, Mode=TwoWay}"
+                   Placeholder="Topic"
+                   Margin="0,20,0,20"/>
+
+            <Editor Grid.Row="2"
+                    Text="{Binding Text, Mode=TwoWay}"
+                    Placeholder="Text"
+                    HeightRequest="120"/>
+
+            <controls:CustomButton ButtonLabel="S a v e"
+                                   Grid.Row="3"
+                                   TappedCommand="{Binding SaveCommand}" />
+            <controls:CustomButton ButtonLabel="C a n c e l"
+                                   Grid.Row="4"
+                                   TappedCommand="{Binding CancelCommand}"/>
+            <controls:CustomButton ButtonLabel="B a c k"
+                                   Grid.Row="5"
+                                   TappedCommand="{prism:GoBack}"/>
+
+        </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

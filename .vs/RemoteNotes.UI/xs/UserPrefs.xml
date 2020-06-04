@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{2EAC0393-91DE-40D3-8BD2-DFADF3450537}|Default">
+  <MonoDevelop.Ide.ItemProperties.RemoteNotes.UI.Android PreferredExecutionTarget="Android.pixel_3_nougat_7_1_-_api_25" />
+  <MonoDevelop.Ide.ItemProperties.RemoteNotes.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.32E99719-9B36-474F-B232-33103E253FDC" />
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="RemoteNotes.UI" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State>
+          <Value>TappedCommand</Value>
+          <Value>SharedMobileHelper.APPLICATION_KEY != SharedMobileHelper.CONTAINER_APPLICATION_KEY</Value>
+          <Value>result</Value>
+          <Value>token.IsCancellationRequested</Value>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
