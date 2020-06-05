@@ -9,10 +9,10 @@ namespace RemoteNotes.UI.Views
         public RemoteNotesTabbedPage()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, true);
+            NavigationPage.SetHasNavigationBar(this, false);
             On<Android>().SetToolbarPlacement(ToolbarPlacement.Bottom)
                          .SetBarItemColor(Color.Black)
-                         .SetBarSelectedItemColor(Color.Red);
+                         .SetBarSelectedItemColor(Color.FromHex("1976D2"));
         }
     }
 }

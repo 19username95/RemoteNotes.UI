@@ -1,4 +1,6 @@
 ﻿using Prism.Mvvm;
+using Xamarin.Forms;
+using Xamarin.Forms.PlatformConfiguration;
 
 namespace RemoteNotes.UI.ViewModels
 {
@@ -6,6 +8,7 @@ namespace RemoteNotes.UI.ViewModels
 	{
         public RemoteNotesTabbedPageViewModel()
         {
+           
         }
 	}
 }
