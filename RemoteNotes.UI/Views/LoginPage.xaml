@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:prism="http://prismlibrary.com"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             x:Class="RemoteNotes.UI.Views.LoginPage">
+    <StackLayout VerticalOptions="Center" Spacing="15">
+
+        <Label Margin="10" Text="Invalid login or password!" TextColor="DarkRed">
+            <Label.Triggers>
+                <DataTrigger Binding="{Binding IsLoginInvalid}" Value="false" TargetType="Label">
+                    <Setter Property="Text" Value=""/>
+                </DataTrigger>
+            </Label.Triggers>
+        </Label>
+
+        <Frame Padding="10,5,10,5" HasShadow="True" CornerRadius="8" Margin="10">
+            <Entry Text="{Binding Username}" Placeholder="Enter the username" />
+        </Frame>
+
+        <Frame Padding="10,5,10,5" HasShadow="True" CornerRadius="8" Margin="10">
+            <Entry Text="{Binding Password}" IsPassword="true" Placeholder="Enter the password" VerticalOptions="StartAndExpand" />
+        </Frame>
+
+        <Button Margin="10" Command="{Binding LogInCommand}" Text="Log in" BackgroundColor="White"/>
+
+    </StackLayout>
+</ContentPage>

@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="App.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
+    <PackageReference Include="Prism.Autofac.Forms" Version="7.1.0.431" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+    <PackageReference Include="Xam.Plugins.Settings" Version="3.1.1" />
+    <PackageReference Include="Xamarin.Forms" Version="4.5.0.396" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RemoteNotes.Service.Client\RemoteNotes.Service.Client.csproj" />
+    <ProjectReference Include="..\RemoteNotes.Service\RemoteNotes.Service.csproj" />
+    <ProjectReference Include="..\RemoteNotes.UI.ViewModels\RemoteNotes.UI.ViewModels.csproj" />
+    <ProjectReference Include="..\RemoteNotes.UI\RemoteNotes.UI.csproj" />
+  </ItemGroup>
+  
+</Project>

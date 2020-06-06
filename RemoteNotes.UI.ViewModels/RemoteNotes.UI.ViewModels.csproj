@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Acr.UserDialogs" Version="7.0.35" />
+    <PackageReference Include="Prism.Autofac.Forms" Version="7.1.0.431" />
+    <PackageReference Include="Xam.Plugin.Media" Version="4.0.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RemoteNotes.Service\RemoteNotes.Service.csproj" />
+    <ProjectReference Include="..\RemoteNotes.UI\RemoteNotes.UI.csproj" />
+  </ItemGroup>
+  
+</Project>
