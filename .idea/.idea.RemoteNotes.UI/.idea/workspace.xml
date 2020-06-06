@@ -1,30 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="62dd1568-e0f5-4725-a1fa-229befe6a984" name="Default Changelist" comment="" />
+    <list default="true" id="62dd1568-e0f5-4725-a1fa-229befe6a984" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/App__RemoteNotes.UI.Android.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/project-cache/RemoteNotes.UI-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/project-cache/RemoteNotes.UI-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/project-cache/RemoteNotes.UI.Android-Debug.json" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/project-cache/RemoteNotes.UI.Android-Debug.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.App/App.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.App/App.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.App/RemoteNotes.App.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.App/RemoteNotes.App.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/HubModule.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client/HubModule.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service/ServiceModule.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service/ServiceModule.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.UI.Android/RemoteNotes.UI.Android.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.UI.Android/RemoteNotes.UI.Android.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.UI.Android/Resources/Resource.designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.UI.Android/Resources/Resource.designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.UI.ViewModels/RemoteNotes.UI.ViewModels.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.UI.ViewModels/RemoteNotes.UI.ViewModels.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.UI.iOS/RemoteNotes.UI.iOS.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.UI.iOS/RemoteNotes.UI.iOS.csproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/ViewModels/EditNoteViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/RemoteNotesTabbedPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/RemoteNotesTabbedPage.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/ViewModels/EditUserViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/NotesCollectionPage.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/ViewModels/LoginPageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/ViewModels/NotesCollectionPageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Hubs/Notes/NotesHub.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file:///Library/Frameworks/Xamarin.iOS.framework/Versions/13.10.0.21/src/Xamarin.iOS/UIKit/UIApplication.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/UserInfoPage.xaml" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/UserInfoPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/ViewModels/CreateNoteViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/ViewModels/UserInfoPageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/NotesCollectionPage.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/ViewModels/NoteViewModel.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/NoteView.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/Note/NoteService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/Storage/IStorageService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/Views/LoginPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI.ViewModels/LoginPageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/ServiceModule.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.UI.Android/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.App/App.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client/FrontServiceClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -44,11 +63,16 @@
         <option value="$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/RemoteNotesTabbedPage.xaml.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/NoteView.xaml" />
         <option value="$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI/Views/UserInfoPage.xaml" />
+        <option value="$PROJECT_DIR$/RemoteNotes.App/RemoteNotes.App.csproj" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service/ServiceModule.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.App/App.xaml" />
+        <option value="$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs" />
       </list>
     </option>
   </component>
   <component name="InvalidFacetManager">
     <ignored-facets>
+      <facet id="App__RemoteNotes.UI.Android/invalid/Android Facet - App__RemoteNotes.UI.Android" />
       <facet id="RemoteNotes.UI.Android/invalid/Android Facet - RemoteNotes.UI.Android" />
     </ignored-facets>
   </component>
@@ -62,13 +86,15 @@
     <property name="Device#class com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSSimulatorKind#com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSDevicesProvider" value="iPhone 11 Pro" />
     <property name="DeviceKind#com.jetbrains.rider.run.xamarin.ios.devices.XamarinIOSDevicesProvider" value="Simulator" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="TWShift.4" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="device.picker.selection" value="pixel_3_nougat_7_1_-_api_25" />
+    <property name="device.picker.selection" value="cea7e0230504" />
     <property name="restartRequiresConfirmation" value="false" />
   </component>
-  <component name="RunManager" selected="Xamarin.iOS.iOS Default">
+  <component name="RunManager" selected="Xamarin.Android.Android Default">
     <configuration name="Android Default" type="XamarinAndroidProject" factoryName="Xamarin.Android">
-      <option name="PROJECT_PATH" value="$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI.Android/RemoteNotes.UI.Android.csproj" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/RemoteNotes.UI.Android/RemoteNotes.UI.Android.csproj" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
       <option name="USE_LAST_SELECTED_DEVICE" value="false" />
@@ -108,94 +134,155 @@
       <option name="presentableId" value="Default" />
       <updated>1583124709381</updated>
       <workItem from="1583124717317" duration="4155000" />
+      <workItem from="1591457304346" duration="1658000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
-    <state x="535" y="277" key="#Android_Default" timestamp="1583124843389">
+    <state x="535" y="277" key="#Android_Default" timestamp="1591457325459">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="535" y="277" key="#Android_Default/0.23.1680.1027@0.23.1680.1027" timestamp="1583124843389" />
+    <state x="535" y="277" key="#Android_Default/0.23.1680.1027@0.23.1680.1027" timestamp="1591457325459" />
     <state x="440" y="202" key="#Notifications" timestamp="1583124969968">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="440" y="202" key="#Notifications/0.23.1680.1027@0.23.1680.1027" timestamp="1583124969968" />
-    <state width="1557" height="466" key="DebuggerActiveHint" timestamp="1583127873209">
+    <state x="535" y="277" key="#iOS_Default" timestamp="1591458646265">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1557" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1583127873209" />
-    <state width="1636" height="341" key="GridCell.Tab.0.bottom" timestamp="1583129072962">
+    <state x="535" y="277" key="#iOS_Default/0.23.1680.1027@0.23.1680.1027" timestamp="1591458646265" />
+    <state width="1557" height="466" key="DebuggerActiveHint" timestamp="1591459061096">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072962" />
-    <state width="1636" height="341" key="GridCell.Tab.0.center" timestamp="1583129072961">
+    <state width="1557" height="466" key="DebuggerActiveHint/0.23.1680.1027@0.23.1680.1027" timestamp="1591459061096" />
+    <state width="1636" height="340" key="GridCell.Tab.0.bottom" timestamp="1591459098836">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072961" />
-    <state width="1636" height="341" key="GridCell.Tab.0.left" timestamp="1583129072961">
+    <state width="1636" height="340" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098836" />
+    <state width="1636" height="340" key="GridCell.Tab.0.center" timestamp="1591459098835">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072961" />
-    <state width="1636" height="341" key="GridCell.Tab.0.right" timestamp="1583129072961">
+    <state width="1636" height="340" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098835" />
+    <state width="1636" height="340" key="GridCell.Tab.0.left" timestamp="1591459098834">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072961" />
-    <state width="1636" height="341" key="GridCell.Tab.1.bottom" timestamp="1583129072693">
+    <state width="1636" height="340" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098834" />
+    <state width="1636" height="340" key="GridCell.Tab.0.right" timestamp="1591459098835">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072693" />
-    <state width="1636" height="341" key="GridCell.Tab.1.center" timestamp="1583129072693">
+    <state width="1636" height="340" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098835" />
+    <state width="1636" height="340" key="GridCell.Tab.1.bottom" timestamp="1591459098837">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072693" />
-    <state width="1636" height="341" key="GridCell.Tab.1.left" timestamp="1583129072692">
+    <state width="1636" height="340" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098837" />
+    <state width="1636" height="340" key="GridCell.Tab.1.center" timestamp="1591459098837">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072692" />
-    <state width="1636" height="341" key="GridCell.Tab.1.right" timestamp="1583129072693">
+    <state width="1636" height="340" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098837" />
+    <state width="1636" height="340" key="GridCell.Tab.1.left" timestamp="1591459098836">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072693" />
-    <state width="1636" height="341" key="GridCell.Tab.2.bottom" timestamp="1583129072695">
+    <state width="1636" height="340" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098836" />
+    <state width="1636" height="340" key="GridCell.Tab.1.right" timestamp="1591459098837">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.2.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072695" />
-    <state width="1636" height="341" key="GridCell.Tab.2.center" timestamp="1583129072694">
+    <state width="1636" height="340" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098837" />
+    <state width="1636" height="340" key="GridCell.Tab.2.bottom" timestamp="1591459098839">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.2.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072694" />
-    <state width="1636" height="341" key="GridCell.Tab.2.left" timestamp="1583129072694">
+    <state width="1636" height="340" key="GridCell.Tab.2.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098839" />
+    <state width="1636" height="340" key="GridCell.Tab.2.center" timestamp="1591459098838">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.2.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072694" />
-    <state width="1636" height="341" key="GridCell.Tab.2.right" timestamp="1583129072694">
+    <state width="1636" height="340" key="GridCell.Tab.2.center/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098838" />
+    <state width="1636" height="340" key="GridCell.Tab.2.left" timestamp="1591459098838">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.2.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072694" />
-    <state width="1636" height="341" key="GridCell.Tab.3.bottom" timestamp="1583129072698">
+    <state width="1636" height="340" key="GridCell.Tab.2.left/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098838" />
+    <state width="1636" height="340" key="GridCell.Tab.2.right" timestamp="1591459098839">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.3.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072698" />
-    <state width="1636" height="341" key="GridCell.Tab.3.center" timestamp="1583129072695">
+    <state width="1636" height="340" key="GridCell.Tab.2.right/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098839" />
+    <state width="1636" height="340" key="GridCell.Tab.3.bottom" timestamp="1591459098840">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.3.center/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072695" />
-    <state width="1636" height="341" key="GridCell.Tab.3.left" timestamp="1583129072695">
+    <state width="1636" height="340" key="GridCell.Tab.3.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098840" />
+    <state width="1636" height="340" key="GridCell.Tab.3.center" timestamp="1591459098840">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.3.left/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072695" />
-    <state width="1636" height="341" key="GridCell.Tab.3.right" timestamp="1583129072697">
+    <state width="1636" height="340" key="GridCell.Tab.3.center/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098840" />
+    <state width="1636" height="340" key="GridCell.Tab.3.left" timestamp="1591459098840">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1636" height="341" key="GridCell.Tab.3.right/0.23.1680.1027@0.23.1680.1027" timestamp="1583129072697" />
-    <state x="528" y="309" key="deploy.picker.dialog" timestamp="1583124975598">
+    <state width="1636" height="340" key="GridCell.Tab.3.left/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098840" />
+    <state width="1636" height="340" key="GridCell.Tab.3.right" timestamp="1591459098840">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="528" y="309" key="deploy.picker.dialog/0.23.1680.1027@0.23.1680.1027" timestamp="1583124975598" />
+    <state width="1636" height="340" key="GridCell.Tab.3.right/0.23.1680.1027@0.23.1680.1027" timestamp="1591459098840" />
+    <state x="528" y="309" key="deploy.picker.dialog" timestamp="1591459004915">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="528" y="309" key="deploy.picker.dialog/0.23.1680.1027@0.23.1680.1027" timestamp="1591459004915" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs</url>
+          <line>80</line>
+          <properties documentPath="$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs" initialLine="80">
+            <startOffsets>
+              <option value="3063" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3102" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RemoteNotes.UI.ViewModels/LoginPageViewModel.cs</url>
+          <line>19</line>
+          <properties documentPath="$PROJECT_DIR$/RemoteNotes.UI.ViewModels/LoginPageViewModel.cs" initialLine="19">
+            <startOffsets>
+              <option value="571" />
+            </startOffsets>
+            <endOffsets>
+              <option value="618" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs</url>
+          <line>87</line>
+          <properties documentPath="$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs" initialLine="87">
+            <startOffsets>
+              <option value="3404" />
+            </startOffsets>
+            <endOffsets>
+              <option value="3405" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

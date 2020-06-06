@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/RemoteNotes.UI.Android.iml" filepath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/RemoteNotes.UI.Android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/App__RemoteNotes.UI.Android.iml" filepath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/App__RemoteNotes.UI.Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/riderModule.iml" filepath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/riderModule.iml" />
     </modules>
   </component>

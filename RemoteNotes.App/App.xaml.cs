@@ -5,12 +5,14 @@ using Plugin.Settings;
 using Plugin.Settings.Abstractions;
 using Prism;
 using Prism.Ioc;
-using RemoteNotes.Service;
 using RemoteNotes.Service.Authentication;
-using RemoteNotes.Service.Client.Stub;
 using RemoteNotes.UI.ViewModels;
 using RemoteNotes.UI.Views;
 using System.Threading.Tasks;
+using RemoteNotes.Service.Client.Contract;
+using RemoteNotes.Service.Note;
+using RemoteNotes.Service.Storage;
+using RemoteNotes.Service.User;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -47,12 +49,16 @@ namespace RemoteNotes.App
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-            containerRegistry.Register<HubModule>();
-            containerRegistry.Register<ServiceModule>();
-
             containerRegistry.RegisterInstance<ISettings>(CrossSettings.Current);
             containerRegistry.RegisterInstance<IMedia>(CrossMedia.Current);
             containerRegistry.RegisterInstance<IUserDialogs>(UserDialogs.Instance);
+
+            containerRegistry.Register<IFrontServiceClient, FrontServiceClient>();
+
+            containerRegistry.RegisterInstance<IStorageService>(Container.Resolve<StorageService>());
+            containerRegistry.RegisterInstance<IAuthenticationService>(Container.Resolve<AuthenticationService>());
+            containerRegistry.RegisterInstance<INoteService>(Container.Resolve<NoteService>());
+            containerRegistry.RegisterInstance<IUserService>(Container.Resolve<UserService>());
 
             // Navigation
             containerRegistry.RegisterForNavigation<NavigationPage>();
@@ -78,7 +84,7 @@ namespace RemoteNotes.App
             }
             else
             {
-                await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(LoginPage)}");
+                var e = await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(LoginPage)}");
             }
         }
 

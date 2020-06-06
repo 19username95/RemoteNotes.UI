@@ -12,10 +12,6 @@ namespace RemoteNotes.Service
         {
             base.Load(builder);
 
-            builder.RegisterType<AuthenticationService>().As<IAuthenticationService>();
-            builder.RegisterType<NoteService>().As<INoteService>();
-            builder.RegisterType<UserService>().As<IUserService>();
-            builder.RegisterType<StorageService>().As<IStorageService>();
         }
     }
 }
