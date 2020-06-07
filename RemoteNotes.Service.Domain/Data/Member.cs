@@ -16,6 +16,7 @@ namespace RemoteNotes.Service.Domain.Data
         public string Interests { get; set; }
         public byte[] Photo { get; set; }
         public DateTime ModifyTime { get; set; }
+        //public int AccessLevel { get; set; }
 
         [JsonIgnore]
         public ImageSource PhotoSource => GetImageSource();
