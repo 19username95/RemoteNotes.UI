@@ -20,10 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RemoteNotes.Service.Client\RemoteNotes.Service.Client.csproj" />
     <ProjectReference Include="..\RemoteNotes.Service\RemoteNotes.Service.csproj" />
     <ProjectReference Include="..\RemoteNotes.UI.ViewModels\RemoteNotes.UI.ViewModels.csproj" />
     <ProjectReference Include="..\RemoteNotes.UI\RemoteNotes.UI.csproj" />
+    <ProjectReference Include="..\RemoteNotes.Service.Client.Stub\RemoteNotes.Service.Client.Stub.csproj" />
   </ItemGroup>
   
 </Project>

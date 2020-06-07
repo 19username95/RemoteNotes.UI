@@ -1,7 +1,6 @@
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using RemoteNotes.Core;
 using RemoteNotes.Service.Client.Contract.Base;
 

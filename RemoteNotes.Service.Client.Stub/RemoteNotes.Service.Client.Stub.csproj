@@ -9,7 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RemoteNotes.App\RemoteNotes.App.csproj" />
     <ProjectReference Include="..\RemoteNotes.Core\RemoteNotes.Core.csproj" />
     <ProjectReference Include="..\RemoteNotes.Service.Clien.Contract\RemoteNotes.Service.Client.Contract.csproj" />
     <ProjectReference Include="..\RemoteNotes.Service\RemoteNotes.Service.csproj" />

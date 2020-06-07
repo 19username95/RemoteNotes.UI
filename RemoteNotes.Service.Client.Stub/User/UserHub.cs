@@ -71,21 +71,7 @@ namespace RemoteNotes.UI.Hubs.User
 
         #region -- Mocks --
 
-        private Member _currentMember
-        {
-            get
-            {
-                var storage = App.App.Resolve<IStorageService>();
-
-                return storage.Load<Member>("CurrentUserNameStorageKey");
-            }
-            set
-            {
-                var storage = App.App.Resolve<IStorageService>();
-
-                storage.Save<Member>("CurrentUserNameStorageKey", value);
-            }
-        }
+        private Member _currentMember { get; set; }
 
         #endregion
     }

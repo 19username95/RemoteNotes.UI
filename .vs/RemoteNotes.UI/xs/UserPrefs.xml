@@ -2,22 +2,28 @@
   <MonoDevelop.Ide.ItemProperties.RemoteNotes.UI.Android PreferredExecutionTarget="Android.pixel_3_nougat_7_1_-_api_25" />
   <MonoDevelop.Ide.ItemProperties.App.RemoteNotes.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.37066B2F-4B75-4F37-BEBF-F1748FB915A4" />
   <MonoDevelop.Ide.ItemProperties.RemoteNotes.UI.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.32E99719-9B36-474F-B232-33103E253FDC" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="RemoteNotes.App/App.xaml.cs">
     <Files>
-      <File FileName="RemoteNotes.Service.Client/Base/BaseHub.cs" Line="131" Column="14" />
+      <File FileName="RemoteNotes.Service.Client/Base/BaseHub.cs" Line="134" Column="1" />
       <File FileName="RemoteNotes.Core/Constants.cs" Line="9" Column="64" />
       <File FileName="RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" Line="15" Column="76" />
+      <File FileName="RemoteNotes.App/RemoteNotes.App.csproj" Line="22" Column="14" />
+      <File FileName="RemoteNotes.Service.Client.Stub/RemoteNotes.Service.Client.Stub.csproj" Line="18" Column="1" />
+      <File FileName="RemoteNotes.Service.Client.Stub/Base/BaseHub.cs" Line="3" Column="30" />
+      <File FileName="RemoteNotes.App/App.xaml.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="RemoteNotes.UI" expanded="True">
-            <Node name="RemoteNotes.Core" expanded="True" />
-            <Node name="RemoteNotes.Service.Client" expanded="True">
-              <Node name="Authentication" expanded="True">
-                <Node name="AuthenticationHub.cs" selected="True" />
+            <Node name="App" expanded="True">
+              <Node name="RemoteNotes.App" expanded="True">
+                <Node name="App.xaml" expanded="True">
+                  <Node name="App.xaml.cs" selected="True" />
+                </Node>
               </Node>
             </Node>
+            <Node name="RemoteNotes.Service.Client.Stub" expanded="True" />
           </Node>
         </State>
       </Pad>

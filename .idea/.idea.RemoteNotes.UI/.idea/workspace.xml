@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62dd1568-e0f5-4725-a1fa-229befe6a984" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client/Notes/NotesHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client/Notes/NotesHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client/User/UserHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client/User/UserHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/UserPrefs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.App/RemoteNotes.App.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.App/RemoteNotes.App.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/RemoteNotes.Service.Client.Stub.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/RemoteNotes.Service.Client.Stub.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,14 +67,14 @@
         <option value="$PROJECT_DIR$/RemoteNotes.UI/Views/LoginPage.xaml" />
         <option value="$PROJECT_DIR$/RemoteNotes.UI/Views/RemoteNotesTabbedPage.xaml" />
         <option value="$PROJECT_DIR$/RemoteNotes.UI/Views/UserInfoPage.xaml" />
-        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Base/BaseHub.cs" />
-        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" />
         <option value="$PROJECT_DIR$/RemoteNotesUnitTests/AppTests.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.UI/Views/NotesCollectionPage.xaml" />
         <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/Notes/NotesHub.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/User/UserHub.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583124709381</updated>
       <workItem from="1583124717317" duration="4155000" />
-      <workItem from="1591457304346" duration="3438000" />
+      <workItem from="1591457304346" duration="3517000" />
     </task>
     <servers />
   </component>
@@ -170,10 +171,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="440" y="202" key="#Notifications/0.23.1680.1027@0.23.1680.1027" timestamp="1583124969968" />
-    <state x="535" y="277" key="#iOS_Default" timestamp="1591531049402">
+    <state x="535" y="277" key="#iOS_Default" timestamp="1591539106014">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="535" y="277" key="#iOS_Default/0.23.1680.1027@0.23.1680.1027" timestamp="1591531049402" />
+    <state x="535" y="277" key="#iOS_Default/0.23.1680.1027@0.23.1680.1027" timestamp="1591539106014" />
     <state width="1557" height="466" key="DebuggerActiveHint" timestamp="1591459061096">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
