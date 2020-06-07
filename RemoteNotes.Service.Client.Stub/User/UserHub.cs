@@ -5,6 +5,7 @@ using RemoteNotes.Service.Client.Contract.Hubs;
 using RemoteNotes.Service.Client.Contract.User;
 using RemoteNotes.Service.Domain.Data;
 using RemoteNotes.Service.Domain.Requests;
+using RemoteNotes.Service.Storage;
 
 namespace RemoteNotes.UI.Hubs.User
 {
@@ -70,21 +71,7 @@ namespace RemoteNotes.UI.Hubs.User
 
         #region -- Mocks --
 
-        private Member _currentMember
-        {
-            get
-            {
-                var storage = App.Resolve<IStorageService>();
-
-                return storage.Load<Member>("CurrentUserNameStorageKey");
-            }
-            set
-            {
-                var storage = App.Resolve<IStorageService>();
-
-                storage.Save<Member>("CurrentUserNameStorageKey", value);
-            }
-        }
+        private Member _currentMember { get; set; }
 
         #endregion
     }

@@ -6,6 +6,6 @@ namespace RemoteNotes.UI
 {
     public static class Constants
     {
-        public const string BaseUrl = "http://194.107.230.233:5001/";
+        public const string BaseUrl = "http://46.98.190.16:5001";
     }
 }

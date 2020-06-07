@@ -1,7 +1,6 @@
 using System;
 using System.Diagnostics;
 using System.Threading.Tasks;
-using Newtonsoft.Json;
 using RemoteNotes.Core;
 using RemoteNotes.Service.Client.Contract.Base;
 
@@ -35,31 +34,8 @@ namespace RemoteNotes.Service.Client.Contract.Hubs
 
         protected async Task<Result> ExecuteAsync(string methodName, params object[] parameters)
         {
-            await CheckHubStateAsync();
-
             var result = new Result();
-            
-            try
-            {
-                var operationStatusInfo = await Hub.InvokeAsync<ServerResult>(
-                    methodName,
-                    parameters);
-
-                if (operationStatusInfo.OperationStatus == EOperationStatus.Done)
-                {
-                    result.SetSuccess();
-                }
-                else
-                {
-                    result.SetFailure(operationStatusInfo.AttachedInfo);
-                }
-            }
-            catch (Exception ex)
-            {
-                result.SetFailure(ex);
-                Debug.WriteLine(ex);
-            }
-
+            result.SetSuccess();
             return result;
         }
         
@@ -68,31 +44,7 @@ namespace RemoteNotes.Service.Client.Contract.Hubs
             await CheckHubStateAsync();
             
             var result = new Result<T>();
-
-            try
-            {
-                var operationStatusInfo = await Hub.InvokeCoreAsync<ServerResult>(
-                    methodName,
-                    parameters);
-
-                if (operationStatusInfo.OperationStatus == EOperationStatus.Done)
-                {
-                    var attachedObjectText = operationStatusInfo.AttachedObject.ToString();
-                    var convertedData = JsonConvert.DeserializeObject<T>(attachedObjectText);
-                    
-                    result.SetSuccess(convertedData);
-                }
-                else
-                {
-                    result.SetFailure(operationStatusInfo.AttachedInfo);
-                }
-            }
-            catch (Exception ex)
-            {
-                result.SetFailure(ex);
-                Debug.WriteLine(ex);
-            }
-
+            result.SetSuccess();
             return result;
         }
         
@@ -102,34 +54,20 @@ namespace RemoteNotes.Service.Client.Contract.Hubs
         
         public event Action<bool> Reconnected = delegate { };
 
-        public bool IsConnected => Hub?.State == HubConnectionState.Connected;
+        public bool IsConnected => true;
         
         public async Task<Result> ConnectAsync()
         {
             var result = new Result();
             Debug.WriteLine("Try connect");
-
-            try
+            
+            if (IsConnected)
             {
-                await Hub.StartAsync();
-
-                if (IsConnected)
-                {
-                    result.SetSuccess();
-                }
-                else
-                {
-                    result.SetFailure();
-                }
+                result.SetSuccess();
             }
-            catch (Exception ex)
+            else
             {
-                Debug.WriteLine(nameof(ConnectAsync), ex.Message, ex);
-                result.SetFailure(ex);
-            }
-            finally
-            {
-                RaiseHubReconnect();
+                result.SetFailure();
             }
 
             return result;
@@ -139,23 +77,7 @@ namespace RemoteNotes.Service.Client.Contract.Hubs
         {
             var result = new Result();
             Debug.WriteLine("Try disconnect");
-
-            try
-            {
-                await Hub.StopAsync();
-                
-                result.SetSuccess();
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(nameof(DisconnectAsync), ex.Message, ex);
-                result.SetFailure(ex);
-            }
-            finally
-            {
-                RaiseHubReconnect();
-            }
-
+            result.SetSuccess();
             return result;
         }
         
@@ -179,29 +101,16 @@ namespace RemoteNotes.Service.Client.Contract.Hubs
         
         #region -- Private methods --
 
-        private async Task InitIfNotInitializedAsync()
+        private Task InitIfNotInitializedAsync()
         {
-            if (Hub == null)
-            {
-                await InitAsync();
-            }
+            return Task.FromResult(1);
         }
         
-        private async Task InitAsync()
+        private Task InitAsync()
         {
-            if (Hub != null)
-            {
-                UnsubscribeReconnectEvents();
-
-                await TryDisposeAsync();
-            }
-
-            Hub = new HubConnectionBuilder()
-                .WithUrl(HubUrl)
-                .Build();
-
             SubscribeReconnectEvents();
             InitHubSubscriptions();
+            return Task.FromResult(1);
         }
 
         private async Task UpdateConnectionAsync()
@@ -219,17 +128,9 @@ namespace RemoteNotes.Service.Client.Contract.Hubs
                             "reconnected with status IsConnected = " + IsConnected);
         }
         
-        private async Task TryDisposeAsync()
+        private Task TryDisposeAsync()
         {
-            try
-            {
-                await Hub.DisposeAsync();
-                Hub = null;
-            }
-            catch (Exception e)
-            {
-                Debug.WriteLine(e);
-            }
+            return Task.FromResult(1);
         }
 
         #endregion
