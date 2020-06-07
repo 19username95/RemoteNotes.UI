@@ -13,7 +13,7 @@ namespace RemoteNotes.UI.Hubs.User
     {
         #region -- BaseHub implementation --
         
-        protected override string HubUrl => $"{Constants.BaseUrl}/notes";
+        protected override string HubUrl => $"{Constants.BaseUrl}/ServerHub";
 
         protected override HubConnection Hub { get; set; }
 

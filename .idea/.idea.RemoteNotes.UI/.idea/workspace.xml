@@ -6,14 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="62dd1568-e0f5-4725-a1fa-229befe6a984" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Base/BaseHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Base/BaseHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/RemoteNotes.Service.Client.Stub.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/RemoteNotes.Service.Client.Stub.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.UI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.UI.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.UI/RemoteNotes.UI.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.UI/Views/NotesCollectionPage.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.UI/Views/NotesCollectionPage.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client/Notes/NotesHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client/Notes/NotesHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client/User/UserHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client/User/UserHub.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +31,10 @@
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/ServiceModule.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/Views/RemoteNotesTabbedPage.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/Views/NotesCollectionPage.xaml" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client/User/UserHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotesUnitTests/AppTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client/Notes/NotesHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.UI.ViewModels/LoginPageViewModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.UI.Android/MainActivity.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.App/App.xaml" root0="FORCE_HIGHLIGHTING" />
@@ -73,6 +71,9 @@
         <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" />
         <option value="$PROJECT_DIR$/RemoteNotesUnitTests/AppTests.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.UI/Views/NotesCollectionPage.xaml" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/Notes/NotesHub.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/User/UserHub.cs" />
       </list>
     </option>
   </component>
@@ -140,7 +141,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583124709381</updated>
       <workItem from="1583124717317" duration="4155000" />
-      <workItem from="1591457304346" duration="2982000" />
+      <workItem from="1591457304346" duration="3438000" />
     </task>
     <servers />
   </component>
@@ -169,10 +170,10 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="440" y="202" key="#Notifications/0.23.1680.1027@0.23.1680.1027" timestamp="1583124969968" />
-    <state x="535" y="277" key="#iOS_Default" timestamp="1591458646265">
+    <state x="535" y="277" key="#iOS_Default" timestamp="1591531049402">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="535" y="277" key="#iOS_Default/0.23.1680.1027@0.23.1680.1027" timestamp="1591458646265" />
+    <state x="535" y="277" key="#iOS_Default/0.23.1680.1027@0.23.1680.1027" timestamp="1591531049402" />
     <state width="1557" height="466" key="DebuggerActiveHint" timestamp="1591459061096">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
