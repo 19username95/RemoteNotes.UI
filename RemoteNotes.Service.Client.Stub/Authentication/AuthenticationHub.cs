@@ -4,6 +4,7 @@ using RemoteNotes.Core;
 using RemoteNotes.Service.Client.Contract.Authentication;
 using RemoteNotes.Service.Client.Contract.Hubs;
 using RemoteNotes.Service.Domain.Data;
+using RemoteNotes.Service.Storage;
 
 namespace RemoteNotes.UI.Hubs.Authentication
 {
@@ -44,7 +45,7 @@ namespace RemoteNotes.UI.Hubs.Authentication
 
         public async Task<Result> LogOutAsync()
         {
-            var storage = App.Resolve<IStorageService>();
+            var storage =  App.App.Resolve<IStorageService>();
 
             _currentMember = null;
 
@@ -78,13 +79,13 @@ namespace RemoteNotes.UI.Hubs.Authentication
         {
             get
             {
-                var storage = App.Resolve<IStorageService>();
+                var storage =  App.App.Resolve<IStorageService>();
 
                 return storage.Load<Member>("CurrentUserNameStorageKey");
             }
             set
             {
-                var storage = App.Resolve<IStorageService>();
+                var storage = App.App.Resolve<IStorageService>();
 
                 storage.Save<Member>("CurrentUserNameStorageKey", value);
             }

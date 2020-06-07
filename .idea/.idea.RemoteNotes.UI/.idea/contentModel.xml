@@ -339,6 +339,14 @@
         <e p="UserInfoPageViewModel.cs" t="Include" />
         <e p="ViewModelBase.cs" t="Include" />
       </e>
+      <e p="RemoteNotesUnitTests" t="IncludeRecursive">
+        <e p="AppInitializer.cs" t="Include" />
+        <e p="AppTests.cs" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="RemoteNotesUnitTests.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Tests" t="Include" />
     </e>
   </component>
 </project>
