@@ -2,6 +2,7 @@
 using Prism.Commands;
 using Prism.Navigation;
 using RemoteNotes.Service.Domain.Data;
+using RemoteNotes.UI.Views;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -83,7 +84,10 @@ namespace RemoteNotes.UI.ViewModels
 
         private async void OnUserTappedCommandAsync(Member member)
         {
-            Debug.WriteLine("i'm there!");
+            await NavigationService.NavigateAsync(nameof(UserView), new NavigationParameters
+            {
+                { "SelectedMember", member }
+            });
         }
     }
 }

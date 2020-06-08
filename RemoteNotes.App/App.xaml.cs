@@ -71,6 +71,7 @@ namespace RemoteNotes.App
             containerRegistry.RegisterForNavigation<LoginPage, LoginPageViewModel>();
             containerRegistry.RegisterForNavigation<NotesCollectionPage, NotesCollectionPageViewModel>();
             containerRegistry.RegisterForNavigation<UsersCollectionPage, UsersCollectionViewModel>();
+            containerRegistry.RegisterForNavigation<UserView, UserViewModel>();
         }
 
         #endregion
