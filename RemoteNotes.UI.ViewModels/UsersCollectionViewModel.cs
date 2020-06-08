@@ -5,6 +5,7 @@ using RemoteNotes.Service.Domain.Data;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
@@ -82,7 +83,7 @@ namespace RemoteNotes.UI.ViewModels
 
         private async void OnUserTappedCommandAsync(Member member)
         {
-
+            Debug.WriteLine("i'm there!");
         }
     }
 }
