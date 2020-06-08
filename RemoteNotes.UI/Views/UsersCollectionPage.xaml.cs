@@ -15,6 +15,7 @@ namespace RemoteNotes.UI.Views
         public UsersCollectionPage()
         {
             InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
         }
     }
 }
