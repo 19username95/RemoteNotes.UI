@@ -2,6 +2,7 @@
 using RemoteNotes.Service.Client.Contract;
 using RemoteNotes.Service.Note;
 using RemoteNotes.Service.Storage;
+using RemoteNotes.Service.User;
 using RemoteNotes.Tests.Unit.MockedServices;
 
 namespace RemoteNotes.Tests.Unit.Data
@@ -26,6 +27,11 @@ namespace RemoteNotes.Tests.Unit.Data
         public static INoteService GetNoteService()
         {
             return new NoteService(GetHubFacade());
+        }
+
+        public static IUserService GetUserService()
+        {
+            return new UserService(GetHubFacade());
         }
     }
 }
