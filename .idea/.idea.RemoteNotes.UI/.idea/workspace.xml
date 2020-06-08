@@ -5,17 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="62dd1568-e0f5-4725-a1fa-229befe6a984" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/RemoteNotes.Tests.Unit/AuthorizationTests.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RemoteNotes.Tests.Unit/MockedServices/StorageService_mock.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/RemoteNotes.Tests.Unit/NotesTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/contentModel.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/GlobalStorage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RemoteNotes.Tests.Unit/UsersTests.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RemoteNotes.UI/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/UserPrefs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/RemoteNotes.UI/xs/UserPrefs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotes.UI.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.UI.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotesUnitTests/AppInitializer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotesUnitTests/AppTests.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/RemoteNotesUnitTests/RemoteNotesUnitTests.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Tests.Unit/Data/ServiceProvider.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Tests.Unit/Data/ServiceProvider.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RemoteNotes.Tests.Unit/NotesTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RemoteNotes.Tests.Unit/NotesTests.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,18 +22,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/Note/INoteService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/Note/NoteService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/Storage/IStorageService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Clien.Contract/IFrontServiceClient.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/User/IUserService.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service/User/UserService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Base/BaseHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Notes/NotesHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Domain/Requests/SavePersonalInfoRequest.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Domain/Data/Note.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.App/App.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client/FrontServiceClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.App/App.xaml.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/Views/UserInfoPage.xaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Tests.Unit/MockedServices/StorageService_mock.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Tests.Unit/UsersTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/GlobalStorage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.UI.iOS/AppDelegate.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.Tests.Unit/Data/ServiceProvider.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RemoteNotes.UI/Views/LoginPage.xaml" root0="FORCE_HIGHLIGHTING" />
@@ -83,12 +86,14 @@
         <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/Authentication/AuthenticationHub.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/Notes/NotesHub.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.Service.Client/User/UserHub.cs" />
-        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" />
-        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.Tests.Unit/MockedServices/StorageService_mock.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.Tests.Unit/AuthorizationTests.cs" />
-        <option value="$PROJECT_DIR$/RemoteNotes.Tests.Unit/Data/ServiceProvider.cs" />
         <option value="$PROJECT_DIR$/RemoteNotes.Tests.Unit/NotesTests.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Tests.Unit/Data/ServiceProvider.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/Authentication/AuthenticationHub.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/User/UserHub.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Service.Client.Stub/GlobalStorage.cs" />
+        <option value="$PROJECT_DIR$/RemoteNotes.Tests.Unit/UsersTests.cs" />
       </list>
     </option>
   </component>
@@ -156,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1583124709381</updated>
       <workItem from="1583124717317" duration="4155000" />
-      <workItem from="1591457304346" duration="5057000" />
+      <workItem from="1591457304346" duration="7208000" />
     </task>
     <servers />
   </component>

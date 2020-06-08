@@ -1,11 +1,11 @@
 using System;
 using System.Threading.Tasks;
 using RemoteNotes.Core;
+using RemoteNotes.Service.Client.Contract;
 using RemoteNotes.Service.Client.Contract.Hubs;
 using RemoteNotes.Service.Client.Contract.User;
 using RemoteNotes.Service.Domain.Data;
 using RemoteNotes.Service.Domain.Requests;
-using RemoteNotes.Service.Storage;
 
 namespace RemoteNotes.UI.Hubs.User
 {
@@ -25,16 +25,26 @@ namespace RemoteNotes.UI.Hubs.User
 
         public event Action<string> Notify = delegate { };
         
-        public Task<Result> SavePersonalInfoAsync(SavePersonalInfoRequest request)
+        public async Task<Result> SavePersonalInfoAsync(SavePersonalInfoRequest request)
         {
-            var requestModel = new object[] { request };
+            var result = new Result();
+            
+            if (GlobalStorage.CurrentMember.MemberId != request.MemberId)
+                throw new Exception("Unknown member id was given");
+            
+            GlobalStorage.CurrentMember.FirstName = request.FirstName;
+            GlobalStorage.CurrentMember.LastName = request.LastName;
+            GlobalStorage.CurrentMember.DateOfBirth = request.DateOfBirth;
+            GlobalStorage.CurrentMember.ModifyTime = request.ModifyTime;
 
-            return ExecuteAsync(HubMethods.SavePersonalData, requestModel);
+            result.SetSuccess();
+            
+            return result;
         }
 
         public async Task<Result<Member>> SaveMemberInfoAsync(SaveMemberInfoRequest request)
         {
-            _currentMember = new Member
+            GlobalStorage.CurrentMember = new Member
             {
                 FirstName = request.FirstName,
                 LastName = request.LastName,
@@ -47,7 +57,7 @@ namespace RemoteNotes.UI.Hubs.User
 
             var result = new Result<Member>();
 
-            result.SetSuccess(_currentMember);
+            result.SetSuccess(GlobalStorage.CurrentMember);
 
             return result;
         }
@@ -66,12 +76,6 @@ namespace RemoteNotes.UI.Hubs.User
         {
             public const string Notify = "Notify";
         }
-
-        #endregion
-
-        #region -- Mocks --
-
-        private Member _currentMember { get; set; }
 
         #endregion
     }

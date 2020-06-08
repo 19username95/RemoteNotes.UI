@@ -146,6 +146,7 @@
         </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="FrontServiceClient.cs" t="Include" />
+        <e p="GlobalStorage.cs" t="Include" />
         <e p="Notes" t="Include">
           <e p="NotesHub.cs" t="Include" />
         </e>
@@ -198,6 +199,7 @@
           </e>
         </e>
         <e p="RemoteNotes.Tests.Unit.csproj" t="IncludeRecursive" />
+        <e p="UsersTests.cs" t="Include" />
       </e>
       <e p="RemoteNotes.UI" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

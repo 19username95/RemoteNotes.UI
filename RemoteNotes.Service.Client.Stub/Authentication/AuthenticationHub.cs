@@ -1,6 +1,7 @@
 using System;
 using System.Threading.Tasks;
 using RemoteNotes.Core;
+using RemoteNotes.Service.Client.Contract;
 using RemoteNotes.Service.Client.Contract.Authentication;
 using RemoteNotes.Service.Client.Contract.Hubs;
 using RemoteNotes.Service.Domain.Data;
@@ -26,7 +27,7 @@ namespace RemoteNotes.UI.Hubs.Authentication
         
         public async Task<Result<Member>> LogInAsync(string login, string password)
         {
-            _currentMember = new Member
+            GlobalStorage.CurrentMember = new Member
             {
                 FirstName = "Yana",
                 LastName = "Kazakova",
@@ -38,14 +39,14 @@ namespace RemoteNotes.UI.Hubs.Authentication
 
             var result = new Result<Member>();
 
-            result.SetSuccess(_currentMember);
+            result.SetSuccess(GlobalStorage.CurrentMember);
 
             return result;
         }
 
         public async Task<Result> LogOutAsync()
         {
-            _currentMember = null;
+            GlobalStorage.CurrentMember = null;
 
             var result = new Result();
 
@@ -68,12 +69,6 @@ namespace RemoteNotes.UI.Hubs.Authentication
         {
             public const string Notify = "Notify";
         }
-
-        #endregion
-
-        #region -- Mocks --
-
-        private Member _currentMember { get; set; }
 
         #endregion
     }
