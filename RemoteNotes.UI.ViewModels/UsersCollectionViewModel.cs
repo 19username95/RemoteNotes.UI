@@ -1,6 +1,7 @@
 ﻿using Acr.UserDialogs;
 using Prism.Commands;
 using Prism.Navigation;
+using RemoteNotes.Service.Authentication;
 using RemoteNotes.Service.Domain.Data;
 using RemoteNotes.UI.Views;
 using System;
@@ -15,10 +16,12 @@ namespace RemoteNotes.UI.ViewModels
     public class UsersCollectionViewModel : ViewModelBase
     {
         private readonly IUserDialogs _userDialogs;
-
-        public UsersCollectionViewModel(INavigationService navigationService, IUserDialogs userDialogs) : base(navigationService)
+        private readonly IAuthenticationService _authenticationService;
+        public UsersCollectionViewModel(INavigationService navigationService, 
+            IUserDialogs userDialogs, IAuthenticationService authenticationService) : base(navigationService)
         {
             _userDialogs = userDialogs;
+            _authenticationService = authenticationService;
         }
 
         private ObservableCollection<Member> _usersCollection;
@@ -30,6 +33,7 @@ namespace RemoteNotes.UI.ViewModels
 
        // public ICommand DeactivateCommand => new DelegateCommand<Member>(OnDeactivateCommandAsync);
         public ICommand UserTappedCommand => new DelegateCommand<Member>(OnUserTappedCommandAsync);
+        public ICommand LogoutCommand => new DelegateCommand(OnLogoutCommandAsync);
 
         public override async void OnNavigatingTo(INavigationParameters parameters)
         {
@@ -88,6 +92,12 @@ namespace RemoteNotes.UI.ViewModels
             {
                 { "SelectedMember", member }
             });
+        }
+
+        private async void OnLogoutCommandAsync()
+        {
+            await _authenticationService.LogOutAsync();
+            await NavigationService.NavigateAsync($"/{nameof(LoginPage)}");
         }
     }
 }

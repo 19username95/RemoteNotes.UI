@@ -76,7 +76,14 @@ namespace RemoteNotes.UI.ViewModels
 
             if (loginResult.IsSuccess)
             {
-                await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(RemoteNotesTabbedPage)}");
+                if (_authenticationService.CurrentMember.AccessLevel!=4)
+                {
+                    await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(RemoteNotesTabbedPage)}");
+                }
+                else
+                {
+                    await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(UsersCollectionPage)}");
+                }
             }
             else
             {

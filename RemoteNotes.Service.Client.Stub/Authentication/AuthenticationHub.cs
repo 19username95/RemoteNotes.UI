@@ -33,7 +33,9 @@ namespace RemoteNotes.UI.Hubs.Authentication
                 NickName = login,
                 Email = "kazakovayana@outlook.com",
                 Interests = "123123 12 12323 12341 234234234 23434 12343454",
-                DateOfBirth = DateTime.Now
+                DateOfBirth = DateTime.Now,
+                AccessLevel = 2,
+                IsActive = true
             };
 
             var result = new Result<Member>();

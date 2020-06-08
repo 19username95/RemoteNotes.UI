@@ -82,7 +82,14 @@ namespace RemoteNotes.App
         {
             if (AuthenticationService.IsAuthorized)
             {
-                await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(RemoteNotesTabbedPage)}");
+                if (AuthenticationService.CurrentMember.AccessLevel!=4)
+                {
+                    await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(RemoteNotesTabbedPage)}");
+                }
+                else
+                {
+                    await NavigationService.NavigateAsync($"/{nameof(NavigationPage)}/{nameof(UsersCollectionPage)}");
+                }
             }
             else
             {

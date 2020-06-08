@@ -7,5 +7,4 @@
             NavigationPage.HasNavigationBar="False">
     <local:NotesCollectionPage Icon="ic_notes.png" Title="NOTES"/>
     <local:UserInfoPage Icon="ic_user.png" Title="PROFILE"/>
-    <local:UsersCollectionPage Icon="ic_user.png" Title="USERS"/>
 </TabbedPage>
