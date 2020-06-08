@@ -26,7 +26,8 @@ namespace RemoteNotes.UI.ViewModels
             set { SetProperty(ref _usersCollection, value); }
         }
 
-        public ICommand DeactivateCommand => new DelegateCommand<Note>(OnDeactivateCommandAsync);
+       // public ICommand DeactivateCommand => new DelegateCommand<Member>(OnDeactivateCommandAsync);
+        public ICommand UserTappedCommand => new DelegateCommand<Member>(OnUserTappedCommandAsync);
 
         public override async void OnNavigatingTo(INavigationParameters parameters)
         {
@@ -74,9 +75,14 @@ namespace RemoteNotes.UI.ViewModels
 
         }
 
-        private async void OnDeactivateCommandAsync(Note tappedNote)
+        //private async void OnDeactivateCommandAsync(Member tappedMember)
+        //{
+            
+        //}
+
+        private async void OnUserTappedCommandAsync(Member member)
         {
-            await GetAllUsersAsync();
+
         }
     }
 }

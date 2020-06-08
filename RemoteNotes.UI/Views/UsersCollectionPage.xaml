@@ -1,52 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d"
              x:Class="RemoteNotes.UI.Views.UsersCollectionPage"
-             xmlns:controls="clr-namespace:RemoteNotes.UI.Controls">
-    <ContentPage.Content>
+             xmlns:controls="clr-namespace:RemoteNotes.UI.Controls"
+             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms">
+
+    <StackLayout>
+
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="0.2*"/>
+                <RowDefinition Height=".99*"/>
             </Grid.RowDefinitions>
 
-            <ListView ItemsSource="{Binding UsersCollection}"
-                  SelectionMode="Single">
+            <ListView Grid.Row="0" 
+                      Margin="15"
+                      ItemsSource="{Binding UsersCollection}"
+                      SelectionMode="None"
+                      HasUnevenRows="True">
+
+                <ListView.Behaviors>
+                    <behaviors:EventToCommandBehavior EventName="ItemTapped"
+                                              Command="{Binding UserTappedCommand}"
+                                              EventArgsParameterPath="Item"/>
+                </ListView.Behaviors>
+
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
+
                             <Grid>
+
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition Width="0.3*"/>
-                                    <ColumnDefinition Width="*"/>
-                                    <!--<ColumnDefinition Width="0.2*"/>-->
+                                    <ColumnDefinition Width="0.6*"/>
                                 </Grid.ColumnDefinitions>
 
-                                <Label Text="{Binding MemberId}"
-                                       Grid.Column="0"/>
-                                <Label Text="{Binding Email}"
-                                       Grid.Column="1"/>
-                                
+                                <Label
+                                   Grid.Column="0"
+                                   Text="{Binding MemberId}"
+                                   LineBreakMode="TailTruncation"/>
+
+                                <Label 
+                                   Grid.Column="1"
+                                   Text="{Binding Email}"
+                                   LineBreakMode="TailTruncation"/>
+
                             </Grid>
+
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
+
             </ListView>
-
-            <Grid Grid.Row="1">
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition Width="0.5*"/>
-                    <ColumnDefinition Width="0.5*"/>
-                </Grid.ColumnDefinitions>
-
-                <controls:CustomButton Grid.Column="1"
-                                       ButtonLabel="B a n"
-                                       Margin="10"
-                                       TappedCommand="{Binding DeactivateCommand}"/>
-            </Grid>
         </Grid>
-    </ContentPage.Content>
+
+    </StackLayout>
+
 </ContentPage>
