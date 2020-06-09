@@ -41,6 +41,11 @@ namespace RemoteNotes.Service.User
             return _hubFacade.UserHub.GetAllMembersAsync();
         }
 
+        public Task<Result> EditMemberAsync(int memberId, bool isActive)
+        {
+            return _hubFacade.UserHub.EditMemberAsync(memberId, isActive);
+        }
+
         #endregion
     }
 }

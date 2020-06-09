@@ -18,5 +18,6 @@ namespace RemoteNotes.Service.User
         Task<Result<Member>> SaveMemberInfoAsync(SaveMemberInfoRequest request);
 
         Task<Result<IEnumerable<MemberModel>>> GetAllMembersAsync();
+        Task<Result> EditMemberAsync(int memberId, bool isActive);
     }
 }

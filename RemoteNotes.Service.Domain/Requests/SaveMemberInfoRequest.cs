@@ -19,5 +19,9 @@ namespace RemoteNotes.Service.Domain.Requests
         public string Email { get; set; }
 
         public string Interests { get; set; }
+
+        public int AccessLevel { get; set; }
+
+        public bool IsActive { get; set; }
     }
 }

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using RemoteNotes.Core;
 using RemoteNotes.Service.Client.Contract.Hubs;
@@ -43,7 +44,9 @@ namespace RemoteNotes.UI.Hubs.User
                 Interests = request.Interests,
                 Email = request.Email,
                 NickName = request.NickName,
-                Photo = request.Photo
+                Photo = request.Photo,
+                IsActive = request.IsActive,
+                AccessLevel = request.AccessLevel
             };
 
             var result = new Result<Member>();
@@ -60,6 +63,21 @@ namespace RemoteNotes.UI.Hubs.User
             var result = new Result<IEnumerable<Member>>();
 
             result.SetSuccess(_mocks);
+
+            return result;
+        }
+
+        public async Task<Result> EditMemberAsync(int memberId, bool isActive)
+        {
+            var toEdit = _mocks.Find(m => m.MemberId == memberId);
+            if (toEdit != null)
+            {
+                toEdit.IsActive = isActive;
+            }
+
+            var result = new Result();
+
+            result.SetSuccess();
 
             return result;
         }

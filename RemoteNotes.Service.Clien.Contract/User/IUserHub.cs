@@ -17,5 +17,7 @@ namespace RemoteNotes.Service.Client.Contract.User
         Task<Result<Member>> SaveMemberInfoAsync(SaveMemberInfoRequest request);
 
         Task<Result<IEnumerable<Member>>> GetAllMembersAsync();
+
+        Task<Result> EditMemberAsync(int memberId, bool isActive);
     }
 }

@@ -1,6 +1,9 @@
-﻿using Prism.Commands;
+﻿using Acr.UserDialogs;
+using Prism.Commands;
 using Prism.Navigation;
 using RemoteNotes.Service.Domain.Data;
+using RemoteNotes.Service.Domain.Requests;
+using RemoteNotes.Service.User;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -11,9 +14,16 @@ namespace RemoteNotes.UI.ViewModels
     public class UserViewModel : ViewModelBase
     {
         private Member _selectedMember;
-        public UserViewModel(INavigationService navigationService) : base(navigationService)
-        {
 
+        private readonly IUserDialogs _userDialogs;
+        private readonly IUserService _userService;
+
+        public UserViewModel(INavigationService navigationService,
+            IUserDialogs userDialogs,
+            IUserService userService) : base(navigationService)
+        {
+            _userDialogs = userDialogs;
+            _userService = userService;
         }
 
         private int _memberId;
@@ -65,6 +75,7 @@ namespace RemoteNotes.UI.ViewModels
 
 
         public ICommand GoBackCommand => new DelegateCommand(OnGoBackCommandAsync);
+        public ICommand ActiveChangeCommand => new DelegateCommand(OnActiveChangeCommandAsync);
 
         public override void OnNavigatingTo(INavigationParameters parameters)
         {
@@ -101,6 +112,38 @@ namespace RemoteNotes.UI.ViewModels
         private async void OnGoBackCommandAsync()
         {
             await NavigationService.GoBackAsync();
+        }
+
+        private async void OnActiveChangeCommandAsync()
+        {
+            //_selectedMember.IsActive = IsActive;
+
+            var editResult = await _userService.EditMemberAsync(MemberId, !IsActive);
+
+            //var saveUserRequest = new SaveMemberInfoRequest
+            //{
+            //    MemberId = _selectedMember.MemberId,
+            //    FirstName = _selectedMember.FirstName,
+            //    LastName = _selectedMember.LastName,
+            //    NickName = _selectedMember.NickName,
+            //    DateOfBirth = _selectedMember.DateOfBirth,
+            //    Email = _selectedMember.Email,
+            //    Interests = _selectedMember.Interests,
+            //    AccessLevel = _selectedMember.AccessLevel,
+            //    IsActive = !_selectedMember.IsActive
+            //};
+
+            //var saveResult = await _userService.SaveMemberInfoAsync(saveUserRequest);
+
+            //if (saveResult.IsSuccess)
+            //{
+            //    await _userDialogs.AlertAsync("Saving success!", "Info", "OK");
+            //    await NavigationService.GoBackAsync();
+            //}
+            //else
+            //{
+            //    await _userDialogs.AlertAsync("Saving failure!", "Error", "OK");
+            //}
         }
     }
 }

@@ -83,12 +83,16 @@
                     <CheckBox Grid.Row="5"
                               Grid.Column="1"
                               Color="Accent"
-                              IsChecked="{Binding IsActive}"/>
+                              IsChecked="{Binding IsActive}"
+                              IsEnabled="False"/>
                 </Grid>
             </ScrollView>
+            <controls:CustomButton ButtonLabel="Disable user"
+                                   TappedCommand="{Binding ActiveChangeCommand}"
+                                   VerticalOptions="EndAndExpand"/>
             <controls:CustomButton ButtonLabel="B a c k"
                                    TappedCommand="{Binding GoBackCommand}"
-                                   VerticalOptions="EndAndExpand"/>
+                                   />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
