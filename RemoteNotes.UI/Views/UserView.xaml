@@ -17,6 +17,7 @@
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
                     </Grid.RowDefinitions>
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="0.45*"/>
@@ -48,6 +49,11 @@
                            TextColor="Black"
                            FontSize="Medium"
                            Text="Email"/>
+                    <Label Grid.Row="5" 
+                           Grid.Column="0" 
+                           TextColor="Black"
+                           FontSize="Medium"
+                           Text="Active"/>
 
                     <Label Grid.Row="0"
                            Grid.Column="1" 
@@ -74,6 +80,10 @@
                            TextColor="Accent"
                            FontSize="Medium"
                            Text="{Binding Email}"/>
+                    <CheckBox Grid.Row="5"
+                              Grid.Column="1"
+                              Color="Accent"
+                              IsChecked="{Binding IsActive}"/>
                 </Grid>
             </ScrollView>
             <controls:CustomButton ButtonLabel="B a c k"

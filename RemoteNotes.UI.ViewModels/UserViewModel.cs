@@ -56,6 +56,14 @@ namespace RemoteNotes.UI.ViewModels
             set => SetProperty(ref _modifyTime, value);
         }
 
+        private bool _isActive;
+        public bool IsActive
+        {
+            get => _isActive;
+            set => SetProperty(ref _isActive, value);
+        }
+
+
         public ICommand GoBackCommand => new DelegateCommand(OnGoBackCommandAsync);
 
         public override void OnNavigatingTo(INavigationParameters parameters)
@@ -71,6 +79,7 @@ namespace RemoteNotes.UI.ViewModels
                 NickName = member.NickName;
                 Email = member.Email;
                 ModifyTime = member.ModifyTime;
+                IsActive = member.IsActive;
             }
         }
 
@@ -86,6 +95,7 @@ namespace RemoteNotes.UI.ViewModels
                 LastName = member.LastName;
                 Email = member.Email;
                 ModifyTime = member.ModifyTime;
+                IsActive = member.IsActive;
             }
         }
         private async void OnGoBackCommandAsync()
