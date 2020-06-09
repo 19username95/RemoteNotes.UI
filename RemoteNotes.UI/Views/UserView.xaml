@@ -5,7 +5,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="RemoteNotes.UI.Views.UserView"
-             xmlns:controls="clr-namespace:RemoteNotes.UI.Controls">
+             xmlns:controls="clr-namespace:RemoteNotes.UI.Controls"
+             xmlns:behaviors="clr-namespace:Prism.Behaviors;assembly=Prism.Forms">
     
     <ContentPage.Content>
         <StackLayout Margin="15,20">
@@ -80,19 +81,22 @@
                            TextColor="Accent"
                            FontSize="Medium"
                            Text="{Binding Email}"/>
+                    
                     <CheckBox Grid.Row="5"
                               Grid.Column="1"
                               Color="Accent"
-                              IsChecked="{Binding IsActive}"
-                              IsEnabled="False"/>
+                              IsChecked="{Binding IsActive}">
+                        <CheckBox.Behaviors>
+                            <behaviors:EventToCommandBehavior EventName="CheckedChanged"
+                                                              Command="{Binding ActiveChangeCommand}"
+                                                              EventArgsParameterPath="Value"/>
+                        </CheckBox.Behaviors>
+                    </CheckBox>
                 </Grid>
             </ScrollView>
-            <controls:CustomButton ButtonLabel="Disable user"
-                                   TappedCommand="{Binding ActiveChangeCommand}"
-                                   VerticalOptions="EndAndExpand"/>
             <controls:CustomButton ButtonLabel="B a c k"
                                    TappedCommand="{Binding GoBackCommand}"
-                                   />
+                                   VerticalOptions="EndAndExpand"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
