@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using RemoteNotes.Core;
 using RemoteNotes.Service.Client.Contract.Hubs;
@@ -52,6 +53,17 @@ namespace RemoteNotes.UI.Hubs.User
             return result;
         }
 
+        public async Task<Result<IEnumerable<Member>>> GetAllMembersAsync()
+        {
+            InitMocks();
+
+            var result = new Result<IEnumerable<Member>>();
+
+            result.SetSuccess(_mocks);
+
+            return result;
+        }
+             
         #endregion
 
         #region -- UserHub configuration constants --
@@ -72,7 +84,19 @@ namespace RemoteNotes.UI.Hubs.User
         #region -- Mocks --
 
         private Member _currentMember { get; set; }
+        private List<Member> _mocks;
+        private void InitMocks()
+        {
+            if (_mocks == null)
+            {
+                _mocks = new List<Member>();
 
+                _mocks.Add(new Member { MemberId = 1, FirstName = "Ivan", LastName = "Petrov", DateOfBirth = DateTime.Now, Email = "i.petrov@gmail.com", Interests = "111", NickName = "petru4o", AccessLevel = 2, IsActive = true, ModifyTime = DateTime.Now });
+                _mocks.Add(new Member { MemberId = 2, FirstName = "Anton", LastName = "Ivanov", DateOfBirth = DateTime.Now, Email = "a.ivanov@gmail.com", Interests = "222", NickName = "AI", AccessLevel = 2, IsActive = true, ModifyTime = DateTime.Now });
+                _mocks.Add(new Member { MemberId = 3, FirstName = "Boris", LastName = "Antonov", DateOfBirth = DateTime.Now, Email = "b.antonov@gmail.com", Interests = "333", NickName = "borisio", AccessLevel = 2, IsActive = false, ModifyTime = DateTime.Now });
+                _mocks.Add(new Member { MemberId = 4, FirstName = "Vasiliy", LastName = "Borisov", DateOfBirth = DateTime.Now, Email = "v.borisov@gmail.com", Interests = "444", NickName = "vasek", AccessLevel = 4, IsActive = true, ModifyTime = DateTime.Now });
+            }
+        }
         #endregion
     }
 }

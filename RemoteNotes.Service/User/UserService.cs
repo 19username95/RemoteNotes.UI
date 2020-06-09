@@ -3,7 +3,10 @@ using RemoteNotes.Service.Client.Contract;
 using RemoteNotes.Service.Domain.Data;
 using RemoteNotes.Service.Domain.Requests;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
+
+using MemberModel = RemoteNotes.Service.Domain.Data.Member;
 
 namespace RemoteNotes.Service.User
 {
@@ -32,7 +35,12 @@ namespace RemoteNotes.Service.User
         {
             return _hubFacade.UserHub.SaveMemberInfoAsync(request);
         }
-        
+
+        public Task<Result<IEnumerable<MemberModel>>> GetAllMembersAsync()
+        {
+            return _hubFacade.UserHub.GetAllMembersAsync();
+        }
+
         #endregion
     }
 }

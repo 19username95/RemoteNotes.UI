@@ -68,6 +68,7 @@ namespace RemoteNotes.UI.ViewModels
                 MemberId = member.MemberId;
                 FirstName = member.FirstName;
                 LastName = member.LastName;
+                NickName = member.NickName;
                 Email = member.Email;
                 ModifyTime = member.ModifyTime;
             }
