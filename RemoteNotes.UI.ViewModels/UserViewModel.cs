@@ -75,7 +75,7 @@ namespace RemoteNotes.UI.ViewModels
 
 
         public ICommand GoBackCommand => new DelegateCommand(OnGoBackCommandAsync);
-        public ICommand ActiveChangeCommand => new DelegateCommand<object>(OnActiveChangeCommandAsync);
+        public ICommand ActiveChangeCommand => new DelegateCommand(OnActiveChangeCommandAsync);
 
         public override void OnNavigatingTo(INavigationParameters parameters)
         {
@@ -114,38 +114,13 @@ namespace RemoteNotes.UI.ViewModels
             await NavigationService.GoBackAsync();
         }
 
-        private async void OnActiveChangeCommandAsync(object e)
+        private async void OnActiveChangeCommandAsync()
         {
-            bool Value = (bool)e;
-            //_selectedMember.IsActive = IsActive;
-            if (Value != _selectedMember.IsActive)
-            {
-                var editResult = await _userService.EditMemberAsync(MemberId, Value);
-            }
-
-            //var saveUserRequest = new SaveMemberInfoRequest
+            //bool Value = (bool)e;
+            _selectedMember.IsActive = IsActive;
+            //if (Value != _selectedMember.IsActive)
             //{
-            //    MemberId = _selectedMember.MemberId,
-            //    FirstName = _selectedMember.FirstName,
-            //    LastName = _selectedMember.LastName,
-            //    NickName = _selectedMember.NickName,
-            //    DateOfBirth = _selectedMember.DateOfBirth,
-            //    Email = _selectedMember.Email,
-            //    Interests = _selectedMember.Interests,
-            //    AccessLevel = _selectedMember.AccessLevel,
-            //    IsActive = !_selectedMember.IsActive
-            //};
-
-            //var saveResult = await _userService.SaveMemberInfoAsync(saveUserRequest);
-
-            //if (saveResult.IsSuccess)
-            //{
-            //    await _userDialogs.AlertAsync("Saving success!", "Info", "OK");
-            //    await NavigationService.GoBackAsync();
-            //}
-            //else
-            //{
-            //    await _userDialogs.AlertAsync("Saving failure!", "Error", "OK");
+                var editResult = await _userService.EditMemberAsync(MemberId, IsActive);
             //}
         }
     }
