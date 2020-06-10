@@ -75,7 +75,7 @@ namespace RemoteNotes.UI.ViewModels
 
 
         public ICommand GoBackCommand => new DelegateCommand(OnGoBackCommandAsync);
-        public ICommand ActiveChangeCommand => new DelegateCommand(OnActiveChangeCommandAsync);
+        public ICommand ActiveChangeCommand => new DelegateCommand<object>(OnActiveChangeCommandAsync);
 
         public override void OnNavigatingTo(INavigationParameters parameters)
         {
@@ -114,14 +114,15 @@ namespace RemoteNotes.UI.ViewModels
             await NavigationService.GoBackAsync();
         }
 
-        private async void OnActiveChangeCommandAsync()
+        private async void OnActiveChangeCommandAsync(object e)
         {
-            //bool Value = (bool)e;
-            _selectedMember.IsActive = IsActive;
-            //if (Value != _selectedMember.IsActive)
-            //{
-                var editResult = await _userService.EditMemberAsync(MemberId, IsActive);
-            //}
+            bool Value = (bool)e;
+            if (Value != _selectedMember.IsActive)
+            {
+                var editResult = await _userService.EditMemberAsync(MemberId, Value);
+                _selectedMember.IsActive = IsActive;
+            }
+
         }
     }
 }
