@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RemoteNotes.Tests.Unit.Data.ServiceProvider">
+    <Position X="0.5" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAIAAAAAAAAAAAAAAABAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\ServiceProvider.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemoteNotes.Tests.Unit.MockedServices.StorageService_mock">
+    <Position X="2.75" Y="1.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAgICAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MockedServices\StorageService_mock.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RemoteNotes.Tests.Unit.AuthorizationTests">
+    <Position X="4.75" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAAQAAAAAAEAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>AuthorizationTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RemoteNotes.Tests.Unit.NotesTests">
+    <Position X="7" Y="1.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAgAAAQAAAAAAAAAAAAAAAAAAAACAA=</HashCode>
+      <FileName>NotesTests.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

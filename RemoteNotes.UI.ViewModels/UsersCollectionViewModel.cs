@@ -69,27 +69,7 @@ namespace RemoteNotes.UI.ViewModels
             }
 
             return result;
-
-            //var result = new List<Member>();
-
-            //if (true)
-            //{
-            //    result.Add(new Member { MemberId = 1, FirstName = "Imya1", LastName = "Familiya1", NickName = "Nick1", DateOfBirth = DateTime.Now, Email = "some@th.com1" });
-            //    result.Add(new Member { MemberId = 1, FirstName = "Imya2", LastName = "Familiya2", NickName = "Nick2", DateOfBirth = DateTime.Now, Email = "some@th.com2" });
-            //}
-            //else
-            //{
-            //    await _userDialogs.AlertAsync("Cant get all members", "Error", "OK");
-            //}
-
-            //return result;
-
         }
-
-        //private async void OnDeactivateCommandAsync(Member tappedMember)
-        //{
-            
-        //}
 
         private async void OnUserTappedCommandAsync(Member member)
         {

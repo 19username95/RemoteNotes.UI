@@ -9,13 +9,13 @@ using Xamarin.Forms.Xaml;
 
 namespace RemoteNotes.UI.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class CreateNoteView : ContentPage
-	{
-		public CreateNoteView ()
-		{
-			InitializeComponent ();
-			NavigationPage.SetHasNavigationBar(this, false);
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class CreateNoteView
+    {
+        public CreateNoteView()
+        {
+            InitializeComponent();
+            NavigationPage.SetHasNavigationBar(this, false);
+        }
+    }
 }

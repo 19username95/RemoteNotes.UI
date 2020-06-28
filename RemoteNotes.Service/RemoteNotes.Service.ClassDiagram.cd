@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RemoteNotes.Service.Authentication.AuthenticationService">
+    <Position X="0.5" Y="3" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAACAEAAAAAAAYAkAA=</HashCode>
+      <FileName>Authentication\AuthenticationService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RemoteNotes.Service.Note.NoteService">
+    <Position X="3" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAgAAAAAAIAAAAFAAAAAAAAAAAA=</HashCode>
+      <FileName>Note\NoteService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RemoteNotes.Service.Storage.StorageService">
+    <Position X="4.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Storage\StorageService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="RemoteNotes.Service.User.UserService">
+    <Position X="6.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAACAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAgIAA=</HashCode>
+      <FileName>User\UserService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="RemoteNotes.Service.Authentication.IAuthenticationService">
+    <Position X="0.5" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAAAAAAACAAAAAAAAAIAEAA=</HashCode>
+      <FileName>Authentication\IAuthenticationService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RemoteNotes.Service.Note.INoteService">
+    <Position X="3" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAgAAAAAAIAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Note\INoteService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RemoteNotes.Service.Storage.IStorageService">
+    <Position X="4.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Storage\IStorageService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="RemoteNotes.Service.User.IUserService">
+    <Position X="6.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAACAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAgIAA=</HashCode>
+      <FileName>User\IUserService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
